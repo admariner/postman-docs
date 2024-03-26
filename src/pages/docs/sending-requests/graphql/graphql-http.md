@@ -35,7 +35,7 @@ warning: false
 
 ---
 
-Postman's [GraphQL client](/docs/sending-requests/graphql/graphql-overview/) is tailored for making GraphQL requests, but you can also create GraphQL requests using Postman's [HTTP request interface](/docs/sending-requests/requests/). The HTTP request interface might be better for some use cases, like working with legacy systems or projects that include both GraphQL and non-GraphQL APIs.
+Postman's [GraphQL client](/docs/sending-requests/graphql/graphql-overview/) is tailored for making GraphQL requests, but you can also create GraphQL requests using Postman's [HTTP request interface](/docs/sending-requests/create-requests/request-basics/). The HTTP request interface might be better for some use cases, like working with legacy systems or projects that include both GraphQL and non-GraphQL APIs.
 
 ## Contents
 
@@ -50,26 +50,26 @@ Postman has built-in support for [sending GraphQL queries in the request body](#
 
 ### Send GraphQL queries in the HTTP request body
 
-1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL field.
+1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL box.
 1. Select `POST` from the request method dropdown list.
 1. Under the **Body** tab, select the **GraphQL** body type.
 1. Enter your GraphQL query in the **Query** editor. The editor enables you to write and edit queries and variables separately.
 1. Select **Send**.
 
-    ![Select the GraphQL body type](https://assets.postman.com/postman-docs/v10/graphql-http-query-v10-20.jpg)
+    <img alt="Select the GraphQL body type" src="https://assets.postman.com/postman-docs/v10/graphql-http-query-v10-22-1.jpg" />
 
 ### Use GraphQL variables
 
 1. Enter your GraphQL variables in the **GraphQL variables** editor.
 1. In the **Query** editor, declare the GraphQL variable in your query. For more information on how to use GraphQL variables, see the [GraphQL variables documentation](https://graphql.org/learn/queries/#variables).
 
-    ![Using GraphQL variables](https://assets.postman.com/postman-docs/v10/graphql-http-variables-v10-20.jpg)
+    ![Using GraphQL variables](https://assets.postman.com/postman-docs/v10/graphql-http-variables-v10-22.jpg)
 
-> You can also [use Postman variables](/docs/sending-requests/variables/) as data inputs for GraphQL variables using `{{variable}}` syntax.
+> You can also [use Postman variables](/docs/sending-requests/variables/variables/) as data inputs for GraphQL variables using `{{variable}}` syntax.
 
 ### Import GraphQL schemas
 
-To enable autocompletion while writing queries, your request needs a GraphQL schema. When you enter a GraphQL endpoint URL in the URL field, Postman automatically fetches the GraphQL schema using introspection. When Postman successfully auto-fetches a schema, a notification appears next to the schema selection list. If your schema has changed, select the refresh icon <img alt="Refresh icon" src="https://assets.postman.com/postman-docs/icon-refresh-v9-5.jpg#icon" width="14px"> to pull in the changes.
+To enable autocompletion while writing queries, your request needs a GraphQL schema. When you enter a GraphQL endpoint URL in the URL box, Postman automatically fetches the GraphQL schema using introspection. When Postman successfully auto-fetches a schema, a notification appears next to the schema selection list. If your schema has changed, select the refresh icon <img alt="Refresh icon" src="https://assets.postman.com/postman-docs/icon-refresh-v9-5.jpg#icon" width="14px"> to pull in the changes.
 
 <img src="https://assets.postman.com/postman-docs/v10/graphql-autofetch-schema-v10-20.jpg" width="355px" alt="GraphQL auto-fetch schema"/>
 
@@ -78,7 +78,7 @@ You also have the option to manually import a schema into your request. After [c
 To import a GraphQL schema into your request manually, do the following:
 
 1. [Create or import a GraphQL API](/docs/designing-and-developing-your-api/creating-an-api/) in your workspace.
-1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL field.
+1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL box.
 1. Select `POST` from the request method dropdown list.
 1. Under the **Body** tab, select the **GraphQL** body type.
 1. Select the arrow next to **Auto Fetch** to open the schema selection dropdown list.
@@ -96,11 +96,11 @@ To import a GraphQL schema into your request manually, do the following:
 1. Under the **Body** tab, select the **raw** body type. Choose **JSON** from the format dropdown list.
 1. Construct your query in the request body using proper JSON formatting.
 
-    ![GraphQL JSON request body](https://assets.postman.com/postman-docs/v10/graphql-http-json-body-v10-20.jpg)
+    ![GraphQL JSON request body](https://assets.postman.com/postman-docs/v10/graphql-http-json-body-v10-22.jpg)
 
 ## Use a GraphQL content type header
 
-1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL field.
+1. Select **New > HTTP** and enter a GraphQL endpoint URL in the URL box.
 1. Select `POST` from the request method dropdown list.
 1. Under the **Body** tab, select the **GraphQL** body type.
 1. Under the **Headers** tab, add the `Content-type` of `application/graphql`.

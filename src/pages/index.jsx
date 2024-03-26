@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 import '../../styles/config/normalize.css';
-import { theme } from '../../styles/theme';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import upcomingEvents from '../../bff-data/events.json';
 import { LandingCard } from '../components/MarketingPages/Cards';
 import '../../styles/config/_pm-icons.css';
-import { BaseLink, BaseLinkStyles, BaseButton, SectionStyles, VideoComponent } from 'aether-marketing';
+import { BaseLink, BaseButton, SectionStyles, VideoComponent } from 'aether-marketing';
 
 const HeroWrapper = styled.section`
   background-color: rgba(173, 205, 251, .2);
@@ -132,7 +127,7 @@ class IndexPage extends React.Component {
                   <LandingCard
                     title="Collaborate with your team"
                     description="Use Postman to enhance collaboration within your team."
-                    link="/docs/collaborating-in-postman/working-with-your-team/collaboration-overview/"
+                    link="/docs/collaborating-in-postman/collaborate-in-postman-overview/"
                     cta="Start collaborating"
                     icon="https://voyager.postman.com/icon/community-three-people-icon-postman.svg"
                   />

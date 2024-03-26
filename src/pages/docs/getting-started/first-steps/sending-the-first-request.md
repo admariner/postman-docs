@@ -21,11 +21,11 @@ contextual_links:
     name: "What is an API endpoint?"
     url: "https://blog.postman.com/what-is-an-api-endpoint/"
   - type: link
+    name: "What are HTTP methods?"
+    url: "https://blog.postman.com/what-are-http-methods/"
+  - type: link
     name: "What are HTTP headers?"
     url: "https://blog.postman.com/what-are-http-headers/"
-  - type: link
-    name: "First 5 Things to Try If You’re New to Postman"
-    url: "https://blog.postman.com/postman-first-5-things-to-try/"
   - type: subtitle
     name: "Public workspaces"
   - type: link
@@ -61,7 +61,7 @@ Make sure you've [downloaded and installed the Postman desktop app](/docs/gettin
 
 Postman displays the response data sent from the server in the lower pane.
 
-<img alt="Sending a request" src="https://assets.postman.com/postman-docs/v10/send-first-request-v10.jpg" width="716px">
+<img alt="Sending a request" src="https://assets.postman.com/postman-docs/v10/send-first-request-v10-21-11.jpg">
 
 ### What happened?
 
@@ -80,4 +80,4 @@ You used Postman to send an API request and got a response from the API server. 
 Now that you've sent your first API request, you're ready to do more with Postman!
 
 * You can send some more requests to the Postman Echo API, a handy tool you can use to test API requests in Postman. To learn more about using the Echo API, visit the [Postman Echo API documentation](/docs/developer/echo-api/).
-* When you're ready to learn more about building and sending requests in Postman, visit [Create and send API requests in Postman](/docs/sending-requests/requests/).
+* When you're ready to learn more about building and sending requests in Postman, visit [Create and send API requests in Postman](/docs/sending-requests/create-requests/create-requests/).

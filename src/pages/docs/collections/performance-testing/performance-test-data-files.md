@@ -16,7 +16,7 @@ contextual_links:
     url: "https://blog.postman.com/postman-api-performance-testing/"
 ---
 
-When you configure a [performance test](/docs/collections/performance-testing/testing-api-performance/), you specify a number of _virtual users_. During the test, each virtual user (VU) runs the selected requests in the specified order in a repeating loop.
+When you [configure a performance test](/docs/collections/performance-testing/performance-test-configuration/), you specify a number of _virtual users_. During the test, each virtual user (VU) runs the selected requests in the specified order in a repeating loop.
 
 By default, each virtual user runs the same requests using the same values. You can customize the behavior of virtual users by importing a CSV or JSON file. Each virtual user can send requests using different values from the imported data file. This enables you to better simulate real-world traffic when testing the performance of your API.
 
@@ -30,17 +30,17 @@ By default, each virtual user runs the same requests using the same values. You 
 
 Importing a data file enables you to populate variables with imported data when running a performance test. Each virtual user can use data from a different row in the data file, customizing their behavior and better simulating real-world usage of your API.
 
-Before you begin, [add variables](/docs/sending-requests/variables/) to the requests in your collection. Then [create a data file](#data-file-format) with the data to use for each variable.
+Before you begin, [add variables](/docs/sending-requests/variables/variables/) to the requests in your collection. Then [create a data file](#data-file-format) with the data to use for each variable.
 
 To run a performance test with a data file, do the following:
 
-1. [Configure a performance test](/docs/collections/performance-testing/testing-api-performance/#configure-a-performance-test), specifying the number of **Virtual users**, the **Test duration**, and a **Load profile**.
+1. [Configure a performance test](/docs/collections/performance-testing/performance-test-configuration), specifying the number of **Virtual users**, the **Test duration**, and a **Load profile**.
 
 1. Select a **Data file** with custom values to use for each virtual user. After you select your data file, a preview of the data file displays.
 
     > The data file must be in CSV or JSON format. Learn more about [formatting a data file](#data-file-format).
 
-    <img alt="Selecting a data type for imported data" src="https://assets.postman.com/postman-docs/v10/performance-test-select-data-type-v10-19a.jpg" />
+    <img alt="Selecting a data type for imported data" src="https://assets.postman.com/postman-docs/v10/performance-test-select-data-type-v10-22.jpg" />
 
 1. Postman automatically detects the **Data file type**. If needed, you can select a different file type (CSV or JSON).
 1. Under **VU data mapping**, select how rows in the data file are mapped to virtual users:
@@ -54,9 +54,11 @@ To run a performance test with a data file, do the following:
 
     > If your CSV file has numbers longer than 16 digits, numbers with preceding zeroes (for example, `000000345`), or phone numbers (for example, `+12125556709`), select the **String** data type to prevent values from being truncated.
 
-1. Select **Save** to save the file configuration. If needed, you can select **Configure File** to change any settings. You can also select a new data file or select the remove icon <img alt="Close icon" src="https://assets.postman.com/postman-docs/icon-close.jpg#icon" width="16px"> to remove the data file.
+1. Select **Continue** when you're done configuring the data file.
 
-    <img alt="Configure a data file" src="https://assets.postman.com/postman-docs/v10/performance-test-configure-data-file-v10-19.jpg" width="548px" />
+    > You can select the settings icon <img alt="Data file settings icon" src="https://assets.postman.com/postman-docs/v10/icon-sliders-v10.jpg#icon" width="24px"> to reconfigure the data file. You can also select a new data file or select the delete icon <img alt="Delete icon" src="https://assets.postman.com/postman-docs/icon-delete-v9.jpg#icon" width="12px"> to remove the data file.
+
+    <img alt="Configure a data file" src="https://assets.postman.com/postman-docs/v10/performance-test-configure-data-file-v10-22.jpg" />
 
 1. Select **Run** to run the performance test using the data file. Each VU uses the assigned data from the data file to populate variables when running the requests in the collection.
 
@@ -76,7 +78,7 @@ Format JSON files as an array of key-value pairs. Each key is the name of a vari
 
 <img alt="JSON format" src="https://assets.postman.com/postman-docs/v10/ramen-json-screenshot.jpg" width="300px"/>
 
-> Variable names are case sensitive, so make sure to use the same case for variables in Postman as in the CSV or JSON file. Variables in data files are resolved as [local variables](/docs/sending-requests/variables/#variable-scopes), so you can access them using `pm.variables.get("variable_key")`. Learn more about [using variables in scripts](/docs/sending-requests/variables/#using-variables-in-scripts).
+> Variable names are case sensitive, so make sure to use the same case for variables in Postman as in the CSV or JSON file. Variables in data files are resolved as [local variables](/docs/sending-requests/variables/variables/#variable-scopes), so you can access them using `pm.variables.get("variable_key")`. Learn more about [using variables in scripts](/docs/sending-requests/variables/variables/#using-variables-in-scripts).
 
 ## Debug errors when using data files
 
@@ -84,4 +86,4 @@ You can [view details about errors](/docs/collections/performance-testing/perfor
 
 <img alt="Viewing imported data for a request error" src="https://assets.postman.com/postman-docs/v10/performance-test-data-file-debug-v10-19.jpg" />
 
-> Data files aren't saved for [past performance test runs](/docs/collections/performance-testing/testing-api-performance/#view-past-performance-runs).
+> Data files aren't saved for [past performance test runs](/docs/collections/performance-testing/performance-test-configuration/#view-past-performance-runs).

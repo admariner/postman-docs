@@ -107,8 +107,12 @@ export const leftNavItems = [
       {
         name: 'Postman basics',
         subParentSlug: '/docs/getting-started/basics/',
-        slug: '/docs/getting-started/basics/navigating-postman/',
+        slug: '/docs/getting-started/basics/postman-basics/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/getting-started/basics/postman-basics/',
+          },
           {
             name: 'The Postman interface',
             url: '/docs/getting-started/basics/navigating-postman/',
@@ -146,8 +150,12 @@ export const leftNavItems = [
       {
         name: 'Install and configure',
         subParentSlug: '/docs/getting-started/installation/',
-        slug: '/docs/getting-started/installation/installation-and-updates/',
+        slug: '/docs/getting-started/installation/install-overview/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/getting-started/installation/install-overview/',
+          },
           {
             name: 'Installation and updates',
             url: '/docs/getting-started/installation/installation-and-updates/',
@@ -177,12 +185,28 @@ export const leftNavItems = [
         slug: '/docs/getting-started/importing-and-exporting/importing-and-exporting-overview/',
         subMenuItems2: [
           {
-            name: 'Data import and export',
+            name: 'Overview',
             url: '/docs/getting-started/importing-and-exporting/importing-and-exporting-overview/',
           },
           {
             name: 'Data import methods',
             url: '/docs/getting-started/importing-and-exporting/importing-data/',
+          },
+          {
+            name: 'SoapUI import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-soapui/',
+          },
+          {
+            name: 'Hoppscotch import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-hoppscotch/',
+          },
+          {
+            name: 'Insomnia import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-insomnia/',
+          },
+          {
+            name: 'Thunder Client import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-thunder-client/',
           },
           {
             name: 'Git import',
@@ -191,10 +215,6 @@ export const leftNavItems = [
           {
             name: 'New Relic import',
             url: '/docs/getting-started/importing-and-exporting/importing-from-new-relic/',
-          },
-          {
-            name: 'Insomnia import',
-            url: '/docs/getting-started/importing-and-exporting/importing-from-insomnia/',
           },
           {
             name: 'cURL command import',
@@ -222,16 +242,59 @@ export const leftNavItems = [
         url: '/docs/sending-requests/requests/',
       },
       {
-        name: 'Authorize requests',
+        name: 'Create requests',
+        subParentSlug: 'create-requests',
+        slug: '/docs/sending-requests/create-requests/create-requests/',
+        subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/sending-requests/create-requests/create-requests/',
+          },
+          {
+            name: 'Request basics',
+            url: '/docs/sending-requests/create-requests/request-basics/',
+          },
+          {
+            name: 'Parameters and body data',
+            url: '/docs/sending-requests/create-requests/parameters/',
+          },
+          {
+            name: 'Request headers',
+            url: '/docs/sending-requests/create-requests/headers/',
+          },
+          {
+            name: 'Test data storage',
+            url: '/docs/sending-requests/create-requests/test-data/',
+          },
+          {
+            name: 'Customize request settings',
+            url: '/docs/sending-requests/create-requests/request-settings/',
+          },
+          {
+            name: 'Group requests in collections',
+            url: '/docs/sending-requests/create-requests/intro-to-collections/',
+          },
+          {
+            name: 'Generate client code',
+            url: '/docs/sending-requests/create-requests/generate-code-snippets/',
+          }
+        ],
+      },
+      {
+        name: 'Authentication and authorization',
         subParentSlug: 'authorization',
         slug: '/docs/sending-requests/authorization/authorization/',
         subMenuItems2: [
           {
-            name: 'Request authorization',
+            name: 'Overview',
             url: '/docs/sending-requests/authorization/authorization/',
           },
           {
-            name: 'Authentication setup',
+            name: 'Add certificates',
+            url: '/docs/sending-requests/authorization/certificates/',
+          },
+          {
+            name: 'Request authorization',
             url: '/docs/sending-requests/authorization/specifying-authorization-details/',
           },
           {
@@ -277,67 +340,70 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'API response structure',
-        url: '/docs/sending-requests/responses/',
-      },
-      {
-        name: 'Group requests in collections',
-        url: '/docs/sending-requests/intro-to-collections/',
-      },
-      {
-        name: 'Store values in variables',
-        url: '/docs/sending-requests/variables/',
-      },
-      {
-        name: 'Group values in environments',
-        subParentSlug: 'environments',
-        slug: '/docs/sending-requests/environments/managing-environments/',
+        name: 'Response data and cookies',
+        subParentSlug: 'response-data',
+        slug: '/docs/sending-requests/response-data/response-data/',
         subMenuItems2: [
           {
-            name: 'Create and use environments',
-            url: '/docs/sending-requests/environments/managing-environments/',
+            name: 'Overview',
+            url: '/docs/sending-requests/response-data/response-data/',
           },
           {
-            name: 'Set environment variables',
-            url: '/docs/sending-requests/environments/environment-variables/',
+            name: 'API response structure',
+            url: '/docs/sending-requests/response-data/responses/',
           },
           {
-            name: 'Manage team environments',
-            url: '/docs/sending-requests/environments/team-environments/',
+            name: 'Visualize request responses',
+            url: '/docs/sending-requests/response-data/visualizer/',
+          },
+          {
+            name: 'Create request response examples',
+            url: '/docs/sending-requests/response-data/examples/',
+          },
+          {
+            name: 'Create and send cookies',
+            url: '/docs/sending-requests/response-data/cookies/',
+          },
+          {
+            name: 'Debug requests',
+            url: '/docs/sending-requests/response-data/troubleshooting-api-requests/',
           },
         ]
       },
       {
-        name: 'Visualize request responses',
-        url: '/docs/sending-requests/visualizer/',
+        name: 'Variables and environments',
+        subParentSlug: 'variables',
+        slug: '/docs/sending-requests/variables/variables-intro/',
+        subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/sending-requests/variables/variables-intro/',
+          },
+          {
+            name: 'Store values in variables',
+            url: '/docs/sending-requests/variables/variables/',
+          },
+          {
+            name: 'Create and use environments',
+            url: '/docs/sending-requests/variables/managing-environments/',
+          },
+          {
+            name: 'Set environment variables',
+            url: '/docs/sending-requests/variables/environment-variables/',
+          },
+          {
+            name: 'Manage team environments',
+            url: '/docs/sending-requests/variables/team-environments/',
+          },
+        ]
       },
       {
-        name: 'Create request response examples',
-        url: '/docs/sending-requests/examples/',
-      },
-      {
-        name: 'Create and capture cookies',
-        url: '/docs/sending-requests/cookies/',
-      },
-      {
-        name: 'Add and manage certificates',
-        url: '/docs/sending-requests/certificates/',
-      },
-      {
-        name: 'Generate client code',
-        url: '/docs/sending-requests/generate-code-snippets/',
-      },
-      {
-        name: 'Debug requests',
-        url: '/docs/sending-requests/troubleshooting-api-requests/',
-      },
-      {
-        name: 'Capture request data',
+        name: 'Capture API traffic',
         subParentSlug: 'capturing-request-data',
         slug: '/docs/sending-requests/capturing-request-data/capture-overview/',
         subMenuItems2: [
           {
-            name: 'Capture API traffic',
+            name: 'Overview',
             url: '/docs/sending-requests/capturing-request-data/capture-overview/',
           },
           {
@@ -480,12 +546,12 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send MQTT client requests',
+        name: 'MQTT',
         subParentSlug: 'mqtt-client',
         slug: '/docs/sending-requests/mqtt-client/mqtt-client-overview/',
         subMenuItems2: [
           {
-            name: 'MQTT requests',
+            name: 'Overview',
             url: '/docs/sending-requests/mqtt-client/mqtt-client-overview/'
           },
           {
@@ -499,8 +565,15 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send SOAP requests',
-        url: '/docs/sending-requests/soap/making-soap-requests/',
+        name: 'SOAP',
+        subParentSlug: 'soap',
+        slug: '/docs/sending-requests/soap/making-soap-requests/',
+        subMenuItems2: [
+          {
+            name: 'Send SOAP requests',
+            url: '/docs/sending-requests/soap/making-soap-requests/'
+          },
+        ],
       },
     ],
   },
@@ -528,8 +601,12 @@ export const leftNavItems = [
       {
         name: 'Scripting reference',
         subParentSlug: 'script-references',
-        slug: '/docs/writing-scripts/script-references/test-examples/',
+        slug: '/docs/writing-scripts/script-references/script-reference-overview/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/writing-scripts/script-references/script-reference-overview/',
+          },
           {
             name: 'Script examples',
             url: '/docs/writing-scripts/script-references/test-examples/',
@@ -565,7 +642,7 @@ export const leftNavItems = [
         slug: '/docs/collections/running-collections/running-collections-overview/',
         subMenuItems2: [
           {
-            name: 'Test API functionality',
+            name: 'Overview',
             url: '/docs/collections/running-collections/running-collections-overview/',
           },
           {
@@ -604,8 +681,12 @@ export const leftNavItems = [
         slug: '/docs/collections/performance-testing/testing-api-performance/',
         subMenuItems2: [
           {
-            name: 'Run a performance test',
+            name: 'Overview',
             url: '/docs/collections/performance-testing/testing-api-performance/',
+          },
+          {
+            name: 'Run a performance test',
+            url: '/docs/collections/performance-testing/performance-test-configuration/',
           },
           {
             name: 'View performance test metrics',
@@ -618,29 +699,6 @@ export const leftNavItems = [
           {
             name: 'Inject data into virtual users',
             url: '/docs/collections/performance-testing/performance-test-data-files/',
-          },
-        ],
-      },
-      {
-        name: 'Live Collections',
-        subParentSlug: 'live-collections',
-        slug: '/docs/collections/live-collections/live-collections-overview/',
-        subMenuItems2: [
-          {
-            name: 'Dynamic collection updates',
-            url: '/docs/collections/live-collections/live-collections-overview/',
-          },
-          {
-            name: 'Create a Live Collection',
-            url: '/docs/collections/live-collections/live-collections-setup/',
-          },
-          {
-            name: 'Update a Live Collection',
-            url: '/docs/collections/live-collections/update-live-collections/',
-          },
-          {
-            name: 'Configure Live Collections',
-            url: '/docs/collections/live-collections/live-collections-settings/',
           },
         ],
       },
@@ -733,6 +791,10 @@ export const leftNavItems = [
           {
             name: 'Select values',
             url: '/docs/postman-flows/concepts/selecting-information/',
+          },
+          {
+            name: 'Pin variables',
+            url: '/docs/postman-flows/concepts/pinning-variables/',
           },
           {
             name: 'Send data between blocks',
@@ -873,16 +935,24 @@ export const leftNavItems = [
   {
     name: 'Collaborate',
     parentSlug: 'collaborating-in-postman',
-    url: '/docs/collaborating-in-postman/working-with-your-team/collaboration-overview/',
+    url: '/docs/collaborating-in-postman/collaborate-in-postman-overview/',
     subMenuItems1: [
       {
         name: 'Overview',
+        url: '/docs/collaborating-in-postman/collaborate-in-postman-overview/',
+      },
+      {
+        name: 'Collaborate with your team',
         subParentSlug: 'working-with-your-team',
         slug: '/docs/collaborating-in-postman/working-with-your-team/collaboration-overview/',
         subMenuItems2: [
           {
-            name: 'Create and manage a team',
+            name: 'Overview',
             url: '/docs/collaborating-in-postman/working-with-your-team/collaboration-overview/',
+          },
+          {
+            name: 'Create and manage a team',
+            url: '/docs/collaborating-in-postman/working-with-your-team/team-collaboration/',
           },
           {
             name: 'Team discovery',
@@ -1024,6 +1094,10 @@ export const leftNavItems = [
             name: 'Sync APIs with your public workspace',
             url: '/docs/collaborating-in-postman/public-api-network/sync-api-with-workspace/',
           },
+          {
+            name: 'Share your collections',
+            url: '/docs/collaborating-in-postman/public-api-network/share-collection-with-public-api-network/',
+          },
         ],
       },
 
@@ -1080,8 +1154,12 @@ export const leftNavItems = [
       {
         name: 'Develop an API',
         subParentSlug: 'developing-an-api',
-        slug: '/docs/designing-and-developing-your-api/developing-an-api/defining-an-api/',
+        slug: '/docs/designing-and-developing-your-api/developing-an-api/develop-an-api/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/designing-and-developing-your-api/developing-an-api/develop-an-api/',
+          },
           {
             name: 'Manage API definitions',
             url: '/docs/designing-and-developing-your-api/developing-an-api/defining-an-api/',
@@ -1128,7 +1206,7 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Observe APIs',
+        name: 'Observe an API',
         subParentSlug: 'observing-an-api',
         slug: '/docs/designing-and-developing-your-api/observing-an-api/observing-an-api/',
         subMenuItems2: [
@@ -1153,8 +1231,12 @@ export const leftNavItems = [
       {
         name: 'Mock an API',
         subParentSlug: 'mocking-data',
-        slug: '/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/',
+        slug: '/docs/designing-and-developing-your-api/mocking-data/mock-an-api/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/designing-and-developing-your-api/mocking-data/mock-an-api/',
+          },
           {
             name: 'Set up mock servers',
             url: '/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/',
@@ -1222,7 +1304,7 @@ export const leftNavItems = [
         slug: '/docs/publishing-your-api/run-in-postman/introduction-run-button/',
         subMenuItems2: [
           {
-            name: 'Share with Run in Postman',
+            name: 'Overview',
             url: '/docs/publishing-your-api/run-in-postman/introduction-run-button/',
           },
           {
@@ -1278,7 +1360,7 @@ export const leftNavItems = [
     url: '/docs/administration/admin-overview/',
     subMenuItems1: [
       {
-        name: 'Admin overview',
+        name: 'Overview',
         url: '/docs/administration/admin-overview/',
       },
       {
@@ -1295,8 +1377,20 @@ export const leftNavItems = [
         slug: '/docs/administration/managing-your-team/managing-your-team/',
         subMenuItems2: [
           {
-            name: 'Manage your team',
+            name: 'Overview',
             url: '/docs/administration/managing-your-team/managing-your-team/',
+          },
+          {
+            name: 'Manage team members',
+            url: '/docs/administration/managing-your-team/manage-team-members/',
+          },
+          {
+            name: "Manage team workspaces",
+            url: '/docs/administration/managing-your-team/manage-team-workspaces/'
+          },
+          {
+            name: "Manage product access",
+            url: '/docs/administration/managing-your-team/manage-team-product-access/'
           },
           {
             name: 'Configure team settings',
@@ -1411,7 +1505,7 @@ export const leftNavItems = [
         slug: '/docs/administration/domain-verification-and-capture/domain-capture-overview/',
         subMenuItems2: [
           {
-            name: 'Verify and capture domains',
+            name: 'Overview',
             url: '/docs/administration/domain-verification-and-capture/domain-capture-overview/',
           },
           {
@@ -1437,8 +1531,12 @@ export const leftNavItems = [
   {
     name: 'Billing',
     parentSlug: 'billing',
-    url: '/docs/billing/billing/',
+    url: '/docs/billing/billing-overview/',
     subMenuItems1: [
+      {
+        name: 'Overview',
+        url: '/docs/billing/billing-overview/',
+      },
       {
         name: 'Manage billing',
         url: '/docs/billing/billing/',
@@ -1556,6 +1654,10 @@ export const leftNavItems = [
         url: '/docs/reports/api-gov-reports/',
       },
       {
+        name: 'Public workspace metrics report',
+        url: '/docs/reports/public-workspace-metrics-reports/',
+      },
+      {
         name: 'Billing overview report',
         url: '/docs/reports/billing-overview-reports/',
       },
@@ -1643,8 +1745,12 @@ export const leftNavItems = [
       {
         name: 'Postman integrations',
         subParentSlug: 'available-integrations',
-        slug: '/docs/integrations/available-integrations/apimatic/',
+        slug: '/docs/integrations/available-integrations/postman-integrations/',
         subMenuItems2: [
+          {
+            name: 'All integrations',
+            url: '/docs/integrations/available-integrations/postman-integrations/',
+          },
           {
             name: 'APIMatic',
             url: '/docs/integrations/available-integrations/apimatic/',

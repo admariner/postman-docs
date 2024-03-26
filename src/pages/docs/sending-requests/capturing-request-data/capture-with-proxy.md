@@ -45,7 +45,7 @@ The Postman desktop app has a built-in proxy that can capture HTTP and HTTPS tra
 1. The server returns a response to the Postman proxy, where it can also be saved.
 1. The response is returned back to the client.
 
-![postman capture proxy](https://assets.postman.com/postman-docs/proxymobile-aa.jpeg)
+![Postman capture proxy](https://assets.postman.com/postman-docs/proxymobile-aa.jpeg)
 
 Similar to the [Interceptor extension](/docs/sending-requests/capturing-request-data/interceptor/), the Postman proxy intercepts and captures your requests. It can also capture responses and cookies.
 
@@ -65,7 +65,7 @@ In the steps below, you'll use the Postman proxy to inspect HTTP and HTTPS commu
 
 The first time you start a proxy session, Postman will install the **Postman Proxy CA** certificate on your computer. If prompted, enter your computer password to install the certificate. Installing the certificate enables the Postman proxy to capture secure HTTPS traffic sent from browsers and other client apps on your computer.
 
-<img alt="Start a proxy session" src="https://assets.postman.com/postman-docs/v10/proxy-start-session-v10-18.jpg" />
+<img alt="Start a proxy session" src="https://assets.postman.com/postman-docs/v10/proxy-start-session-v10-22.jpg" />
 
 ### Step 2: Control the proxy session
 
@@ -75,7 +75,7 @@ When you start the proxy session, the Postman proxy begins capturing traffic sen
 
 To control an active proxy session, select <img alt="Capture icon" src="https://assets.postman.com/postman-docs/icon-capture.jpg#icon" width="15px"> **Proxy active** in the footer to display the proxy session tab. (If the proxy session is paused, select <img alt="Capture icon" src="https://assets.postman.com/postman-docs/icon-capture.jpg#icon" width="15px"> **Start proxy** in the footer.) The proxy tab shows the total duration of the session and the size of the data captured.
 
-With the proxy active, try opening a web browser and navigating to a web site, or open an app that communicates with a server. Requests appear on the proxy session tab as they're captured.
+With the proxy active, try opening a web browser and navigating to a website, or open an app that communicates with a server. Requests appear on the proxy session tab as they're captured.
 
 From the proxy session tab, you can take the following actions:
 
@@ -98,7 +98,7 @@ From the proxy session tab, you can take the following actions:
 
     > In responses with a `content-type` that has images, audio, or video, the content is intercepted but not captured. The information captured is response headers, time taken, and the status code.
 
-<img alt="Control a proxy session" src="https://assets.postman.com/postman-docs/v10/proxy-control-session-v10-19a.jpg" />
+<img alt="Control a proxy session" src="https://assets.postman.com/postman-docs/v10/proxy-control-session-v10-22.jpg" />
 
 ### Step 3: View the proxy session results
 
@@ -112,9 +112,9 @@ You can view and work with the proxy session results while the session is active
 * Select a request to view more details.
 * Select a request URL to open it as a new API request in Postman.
 * To delete a request or cookie, select it and select <img alt="Delete icon" src="https://assets.postman.com/postman-docs/icon-delete-v9.jpg#icon" width="12px"> **Delete**.
-* To add a cookie to the [Postman cookie jar](/docs/sending-requests/cookies/), select it and select **+ Add to Cookie Jar**.
+* To add a cookie to the [Postman cookie jar](/docs/sending-requests/response-data/cookies/), select it and select **+ Add to Cookie Jar**.
 
-<img alt="View proxy session results" src="https://assets.postman.com/postman-docs/v10/proxy-view-results-v10-19a.jpg" />
+<img alt="View proxy session results" src="https://assets.postman.com/postman-docs/v10/proxy-view-results-v10-22.jpg" />
 
 ### Step 4: Stop the proxy session
 
@@ -133,7 +133,7 @@ To save captured requests to a collection, do the following:
 1. Choose how to organize the requests in the collection. You can select the checkboxes to group the requests in folders organized by **Domain name**, **Endpoints**, or both.
 1. Select **Save**.
 
-<img alt="Save captured requests to a collection" src="https://assets.postman.com/postman-docs/v10/proxy-create-collection-v10-19a.jpg" />
+<img alt="Save captured requests to a collection" src="https://assets.postman.com/postman-docs/v10/proxy-create-collection-v10-22.jpg" />
 
 ### Step 5: Configure the proxy on a client device
 

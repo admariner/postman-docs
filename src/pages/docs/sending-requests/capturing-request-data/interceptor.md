@@ -96,9 +96,9 @@ You can work with the Interceptor session results in the following ways:
 * Select a request to view more details.
 * Select a request URL to open it as a new API request in Postman.
 * To delete a request or cookie, select it and select <img alt="Delete icon" src="https://assets.postman.com/postman-docs/icon-delete-v9.jpg#icon" width="12px"> **Delete**.
-* To add a cookie to the [Postman cookie jar](/docs/sending-requests/cookies/), select it and select **+ Add to Cookie Jar**.
+* To add a cookie to the [Postman cookie jar](/docs/sending-requests/response-data/cookies/), select it and select **+ Add to Cookie Jar**.
 
-<img alt="Viewing Interceptor results" src="https://assets.postman.com/postman-docs/v10/interceptor-view-results-v10-19.jpg" />
+<img alt="Viewing Interceptor results" src="https://assets.postman.com/postman-docs/v10/interceptor-view-results-v10-22.jpg" />
 
 ### Saving captured requests to a collection
 
@@ -111,4 +111,4 @@ You can save requests captured during an Interceptor session to a collection.
 1. Choose how to organize the requests in the collection. You can select the checkboxes to group the requests in folders organized by **Domain name**, **Endpoints**, or both.
 1. Select **Save**.
 
-<img alt="Adding captured requests to a collection" src="https://assets.postman.com/postman-docs/v10/interceptor-add-to-collection-v10-19.jpg" />
+<img alt="Adding captured requests to a collection" src="https://assets.postman.com/postman-docs/v10/interceptor-add-to-collection-v10-22.jpg" />

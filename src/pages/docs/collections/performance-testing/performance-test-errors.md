@@ -16,7 +16,7 @@ contextual_links:
     url: "https://blog.postman.com/postman-api-performance-testing/"
 ---
 
-During a [performance test](/docs/collections/performance-testing/testing-api-performance/), requests that result in a response other than a 2xx status code are tracked as errors. You can view details about the top errors that occurred during the test and error trends over time. Use this information to gain insight into when errors are occurring and the possible causes.
+During a [performance test](/docs/collections/performance-testing/performance-test-configuration/), requests that result in a response other than a 2xx status code are tracked as errors. You can view details about the top errors that occurred during the test and error trends over time. Use this information to gain insight into when errors are occurring and the possible causes.
 
 ## Contents
 
@@ -42,7 +42,7 @@ You can view error trends after the performance test is complete. The error tren
 
 To view error trends, select the **Errors** tab. You can also select the **Error rate** on the **Summary** tab and select **View Error Trends**.
 
-<img alt="Viewing error trends" src="https://assets.postman.com/postman-docs/v10/performance-test-errors-graph-v10-18a.jpg"/>
+<img alt="Viewing error trends" src="https://assets.postman.com/postman-docs/v10/performance-test-errors-graph-v10-24a.jpg"/>
 
 You can view the following information about the error trends:
 
